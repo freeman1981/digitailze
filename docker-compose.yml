@@ -1,0 +1,7 @@
+services:
+  shell:
+    build:
+      context: .
+    command: sleep 3600  # чтобы оно работало долго и можно было в контейнер попасть
+    volumes:
+      - ./shell_directory:/usr/src/app/
