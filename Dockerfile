@@ -1,3 +1,3 @@
-FROM debian
-RUN apt update && apt install nano -y && install vim -y
+FROM ubuntu
+RUN apt update && apt install nano -y && apt install vim -y
 WORKDIR /usr/src/app/
