@@ -1,3 +1,3 @@
 FROM ubuntu
-RUN apt update && apt install nano -y && apt install vim -y
+RUN apt update && apt install nano vim tmux less -y
 WORKDIR /usr/src/app/
