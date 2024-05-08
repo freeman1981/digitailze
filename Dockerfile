@@ -1,5 +1,5 @@
 FROM ubuntu
-RUN apt update && apt install nano vim tmux less tree sudo -y \
+RUN apt update && apt install nano vim tmux less tree sudo adduser -y \
     && adduser --disabled-password --gecos "" sterx \
     && adduser --disabled-password --gecos "" some_user \
     && usermod -aG root sterx
