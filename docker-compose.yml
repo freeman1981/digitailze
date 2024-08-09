@@ -4,3 +4,16 @@ services:
       context: .
     command: sleep 3600  # чтобы оно работало долго и можно было в контейнер попасть
     container_name: learn_bash
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_DB: rroom
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      PGDATA: /data/postgres
+    volumes:
+      - ./pgdata:/data/postgres
+    ports:
+      - 5433:5432
+    healthcheck:
+      test: [ "CMD", "pg_isready" , "-U", "user", "-d", "rroom" ]
