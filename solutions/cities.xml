@@ -1,0 +1,26 @@
+<cities>
+    <city>
+        <name>Москва</name>
+        <population>13149803</population>
+        <child_cities>
+            <city>
+                <name>Зеленоград</name>
+            </city>
+        </child_cities>
+    </city>
+    <city>
+        <name>Санкт-Петербург</name>
+        <population>5597763</population>
+    </city>
+    <city>
+        <name>Кемпендяй</name>
+        <population>357</population>
+    </city>
+    <city>
+        <name>Пеледуй</name>
+        <population>3578</population>
+    </city>
+    <city>
+        <name>Чаплыгин</name>
+    </city>
+</cities>
